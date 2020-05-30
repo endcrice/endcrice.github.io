@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://endcrice.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-05-30T00:40:44.964Z</updated>
+    <title>止一化十</title>
+    <updated>2020-05-30T00:42:33.471Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://endcrice.github.io"/>
     <link rel="self" href="https://endcrice.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
+    <subtitle>我们来一起分享知识哦</subtitle>
     <logo>https://endcrice.github.io/images/avatar.png</logo>
     <icon>https://endcrice.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, 止一化十</rights>
     <entry>
         <title type="html"><![CDATA[爱因斯坦]]></title>
         <id>https://endcrice.github.io/post/ai-yin-si-tan/</id>
