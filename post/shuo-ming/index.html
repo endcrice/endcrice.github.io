@@ -1,9 +1,11 @@
+
+<!DOCTYPE html>
 <html>
   <head>
     
 <meta charset="utf-8" >
 
-<title>止一化十</title>
+<title>说明 | 止一化十</title>
 <meta name="description" content="我们来一起分享知识哦">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -14,6 +16,12 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://endcrice.github.io/styles/main.css">
 
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -75,15 +83,32 @@
 </transition>
 
 
-        <div class="content-container">
+      <div class="content-container">
+        <div class="post-detail">
           
-          <div class="tags-container">
+          <h2 class="post-title">说明</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-06-09</span>
             
           </div>
+          <div class="post-content">
+            <p>给大家分享的软件都是本人使用过的觉得不错的软件，由于一些是破解软件，会受到系统国产软件的检查出病毒，其实是没有病毒，这是国产杀毒软件对正版的支持，咱们是“穷人”，只能是白嫖吧，大家都不用担心病毒，所有推荐给大家的软件都是经过本人使用的。</p>
 
+          </div>
         </div>
 
-        <div class="site-footer">
+        
+      </div>
+
+      
+        
+          <div id="gitalk-container"></div>
+        
+
+        
+      
+
+      <div class="site-footer">
   <div class="slogan">我们来一起分享知识哦</div>
   <div class="social-container">
     
@@ -102,8 +127,8 @@
 </div>
 
 
-      </div>
-      <script type="application/javascript">
+    </div>
+    <script type="application/javascript">
 
 hljs.initHighlightingOnLoad()
 
@@ -118,7 +143,29 @@ var app = new Vue({
 
 
 
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
 
-    </div>
+      var gitalk = new Gitalk({
+        clientID: '7b27a0edc9d0869b13bb',
+        clientSecret: '05d9c6b835398610f3df5d221fa1e74f79a89e3b',
+        repo: 'endcrice.github.io',
+        owner: 'endcrice',
+        admin: ['endcrice'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
   </body>
 </html>
